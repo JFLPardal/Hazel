@@ -6,6 +6,11 @@ extern Hazel::Application* Hazel::CreateApplication();
 
 int main(int argc, char** argv)
 {
+	Hazel::Log::Init();
+	HZ_CORE_WARN("log CORE initialized");
+	int a = 15;
+	HZ_INFO("log APP initialized {0}", a);	// substitutes Hazel::Log::GetClientLogger()->warn("");	
+
 	auto app = Hazel::CreateApplication();
 	app->Run();
 	delete app;
