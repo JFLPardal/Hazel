@@ -2,8 +2,8 @@
 
 #include "Hazel/Core.h"
 
-#include <string>
-#include <functional>
+// includes <string>
+// includes <functional>
 
 namespace Hazel {
 
